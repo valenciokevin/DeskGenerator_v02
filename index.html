@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Desk Generator</title>
+</head>
+<body>
+
+    <header>
+        <h1>Desk Generator</h1>
+        <nav>
+            <button>Home</button>
+            <button>Editor</button>
+        </nav>
+    </header>
+
+    <main>
+        <fieldset>
+            <legend>Saudações</legend>
+            <div id="sauluteContainer">
+
+                <div class="salute-options">
+                    <label>
+                        <input type="radio" name="saluteCliente" id="maleClient" value="Prezado" aria-label="Prezado" required> Prezado
+                    </label>
+                    <label>
+                        <input type="radio" name="saluteCliente" id="femaleClient" value="Prezada" aria-label="Prezada" required> Prezada
+                    </label>
+                </div>
+
+                <input type="text" name="clientName" id="clientName" placeholder="Nome do Cliente">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Motivo do contato</legend>
+
+            <div id="deskCategory">
+                <label>
+                    <input type="radio" name="deskOption" value="Solicitação" onclick="showCategoryInfo('chat')" required> Chat
+                </label>
+
+                <label>
+                    <input type="radio" name="deskOption" value="Problema" onclick="showCategoryInfo('phone')" required> Telefonia
+                </label>
+
+                <label>
+                    <input type="radio" name="deskOption" value="Dúvida" onclick="showCategoryInfo('app')" required> App
+                </label>
+            </div>
+
+            <div id="categoryOptionsContainer">
+
+                <fieldset id="chatCategory" style="display: none;">
+                    <legend>Chat</legend>
+
+                    <div class="input-container">
+                        <label for="">Mídia Social: </label>
+                        <input type="text" name="" id="">
+                    </div>
+
+                    <div class="input-container">
+                        <label for="">Provedor: </label>
+                        <input type="text" name="" id="">
+                    </div>
+
+                    <div class="input-container">
+                        <label for="">Integração: </label>
+                        <input type="text" name="" id="">
+                    </div>
+
+                    <div class="input-container">
+                        <label for="">Campanha: </label>
+                        <input type="text" name="" id="">
+                    </div>
+
+                    <div class="input-container">
+                        <label for="">Descrição: </label>
+                        <textarea name="" id=""></textarea>
+                    </div>
+
+                </fieldset>
+
+
+                <fieldset id="phoneCategory" style="display: none;">
+                    <legend>Telefonia</legend>
+
+                    <div class="input-container">
+                        <label for="">Linha/Tronco: </label>
+                        <input type="text" name="" id="">
+                    </div>
+
+                    <div class="input-container">
+                        <label for="">Operadora: </label>
+                        <input type="text" name="" id="">
+                    </div>
+
+                    <div class="input-container">
+                        <label for="">Agente: </label>
+                        <input type="text" name="" id="">
+                    </div>
+
+                    <div class="input-container">
+                        <label for="">Ramal: </label>
+                        <input type="text" name="" id="">
+                    </div>
+
+                    <div class="input-container">
+                        <label for="">Modelo: </label>
+                        <input type="text" name="" id="">
+                    </div>
+
+                    <div class="input-container">
+                        <label for="">IP: </label>
+                        <input type="text" name="" id="">
+                    </div>
+
+                    <div class="input-container">
+                        <label for="">AnyDesk: </label>
+                        <input type="text" name="" id="">
+                    </div>
+
+                    <div class="input-container">
+                        <label for="">Campanha: </label>
+                        <input type="text" name="" id="">
+                    </div>
+
+                    <div class="input-container">
+                        <label for="">Integração: </label>
+                        <input type="text" name="" id="">
+                    </div>
+
+                    <div class="input-container">
+                        <label for="">Descrição: </label>
+                        <textarea name="" id=""></textarea>
+                    </div>
+
+                </fieldset>
+
+                
+
+                <fieldset id="appCategory" style="display: none;">
+                    <legend>App</legend>
+                </fieldset>
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Contato</legend>
+        </fieldset>
+
+        <fieldset>
+            <legend>Observações Internas</legend>
+        </fieldset>
+
+    </main>
+
+    <footer></footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
